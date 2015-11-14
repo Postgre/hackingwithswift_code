@@ -17,26 +17,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHo-20-u9O">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHo-20-u9O">
                                 <rect key="frame" x="200" y="100" width="200" height="100"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pS4-iK-kvE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6X-iS-Aj5">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6X-iS-Aj5">
                                 <rect key="frame" x="200" y="230" width="200" height="100"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLq-kr-tC4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biq-cd-sVP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biq-cd-sVP">
                                 <rect key="frame" x="200" y="360" width="200" height="100"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T72-Lz-NFa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wHo-20-u9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="9zc-qu-eqT"/>
+                            <constraint firstItem="biq-cd-sVP" firstAttribute="centerX" secondItem="v6X-iS-Aj5" secondAttribute="centerX" id="GRN-gM-B4z"/>
+                            <constraint firstItem="biq-cd-sVP" firstAttribute="top" secondItem="v6X-iS-Aj5" secondAttribute="bottom" constant="30" id="Slp-Id-ShX"/>
+                            <constraint firstItem="wHo-20-u9O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WL5-4j-IHl"/>
+                            <constraint firstItem="v6X-iS-Aj5" firstAttribute="centerX" secondItem="wHo-20-u9O" secondAttribute="centerX" id="ieP-5p-uwW"/>
+                            <constraint firstItem="v6X-iS-Aj5" firstAttribute="top" secondItem="wHo-20-u9O" secondAttribute="bottom" constant="30" id="uuR-pG-gFC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IIY-re-1RK"/>
+                    <connections>
+                        <outlet property="button1" destination="wHo-20-u9O" id="Zh7-2R-xwk"/>
+                        <outlet property="button2" destination="v6X-iS-Aj5" id="sK8-iC-0UT"/>
+                        <outlet property="button3" destination="biq-cd-sVP" id="b4p-sz-avp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,4 +84,7 @@
             <point key="canvasLocation" x="416" y="1056"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+    </resources>
 </document>
