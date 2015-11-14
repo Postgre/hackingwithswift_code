@@ -11,6 +11,7 @@ import WebKit
 
 class ViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
+    var progressView: UIProgressView!
     
     override func loadView() {
         webView = WKWebView()
@@ -18,17 +19,36 @@ class ViewController: UIViewController, WKNavigationDelegate {
         view = webView
         
     }
+    
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        if keyPath == "estimatedProgress" {
+            progressView.progress = Float(webView.estimatedProgress)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .Plain, target: self, action: "openTapped")
-//        let url = NSURL(string: "https://www.apple.com")!
-//        webView.loadRequest(NSURLRequest(URL: url))
-//        webView.allowsBackForwardNavigationGestures = true
+        
+        progressView = UIProgressView(progressViewStyle: .Default)
+        progressView.sizeToFit()
+        let progressButton = UIBarButtonItem(customView: progressView)
+        let spacer = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: self, action: nil)
+        let refresh = UIBarButtonItem(barButtonSystemItem: .Refresh, target: webView, action: "reload")
+        
+        toolbarItems = [progressButton, spacer, refresh]
+        navigationController?.toolbarHidden = false
+        
+        webView.addObserver(self, forKeyPath: "estimatedProgress", options: .New, context: nil)
     }
     
+    func refreshTapped() {
+        NSLog("gggg")
+        webView.reload()
+    }
     func openTapped() {
         let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .ActionSheet)
+        ac.addAction(UIAlertAction(title: "www.baidu.com", style: .Default, handler: openPage))
         ac.addAction(UIAlertAction(title: "apple.com", style: .Default, handler: openPage))
         ac.addAction(UIAlertAction(title: "hackingwithswift", style: .Default, handler: openPage))
         ac.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
