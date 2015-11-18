@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		279543F81BF7757A00EF198C /* Project7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		279543F81BF7757A00EF198C /* Project9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279543FB1BF7757A00EF198C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279543FD1BF7757A00EF198C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		279543FF1BF7757A00EF198C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		279543EF1BF7757A00EF198C = {
 			isa = PBXGroup;
 			children = (
-				279543FA1BF7757A00EF198C /* Project7 */,
+				279543FA1BF7757A00EF198C /* Project9 */,
 				279543F91BF7757A00EF198C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		279543F91BF7757A00EF198C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				279543F81BF7757A00EF198C /* Project7.app */,
+				279543F81BF7757A00EF198C /* Project9.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		279543FA1BF7757A00EF198C /* Project7 */ = {
+		279543FA1BF7757A00EF198C /* Project9 */ = {
 			isa = PBXGroup;
 			children = (
 				279543FB1BF7757A00EF198C /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				279544061BF7757A00EF198C /* LaunchScreen.storyboard */,
 				279544091BF7757A00EF198C /* Info.plist */,
 			);
-			path = Project7;
+			path = Project9;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		279543F71BF7757A00EF198C /* Project7 */ = {
+		279543F71BF7757A00EF198C /* Project9 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2795440C1BF7757A00EF198C /* Build configuration list for PBXNativeTarget "Project7" */;
+			buildConfigurationList = 2795440C1BF7757A00EF198C /* Build configuration list for PBXNativeTarget "Project9" */;
 			buildPhases = (
 				279543F41BF7757A00EF198C /* Sources */,
 				279543F51BF7757A00EF198C /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = Project7;
+			name = Project9;
 			productName = Project7;
-			productReference = 279543F81BF7757A00EF198C /* Project7.app */;
+			productReference = 279543F81BF7757A00EF198C /* Project9.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 279543F31BF7757A00EF198C /* Build configuration list for PBXProject "Project7" */;
+			buildConfigurationList = 279543F31BF7757A00EF198C /* Build configuration list for PBXProject "Project9" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				279543F71BF7757A00EF198C /* Project7 */,
+				279543F71BF7757A00EF198C /* Project9 */,
 			);
 		};
 /* End PBXProject section */
@@ -258,10 +258,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Project7/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Project9/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unixera.Project7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unixera.Project9;
+				PRODUCT_NAME = Project9;
 			};
 			name = Debug;
 		};
@@ -269,17 +269,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Project7/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Project9/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.unixera.Project7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unixera.Project9;
+				PRODUCT_NAME = Project9;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		279543F31BF7757A00EF198C /* Build configuration list for PBXProject "Project7" */ = {
+		279543F31BF7757A00EF198C /* Build configuration list for PBXProject "Project9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2795440A1BF7757A00EF198C /* Debug */,
@@ -288,13 +288,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2795440C1BF7757A00EF198C /* Build configuration list for PBXNativeTarget "Project7" */ = {
+		2795440C1BF7757A00EF198C /* Build configuration list for PBXNativeTarget "Project9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2795440D1BF7757A00EF198C /* Debug */,
 				2795440E1BF7757A00EF198C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
