@@ -47,17 +47,11 @@ class GameScene: SKScene {
         
         for i in 0 ..< 5 {
             createSlotAt(CGPoint(x: 100 + (i * 170), y: 410))
-        }
-        
-        for i in 0 ..< 4 {
-            createSlotAt(CGPoint(x: 180 + (i * 170), y: 320))
-        }
-        
-        for i in 0 ..< 5 {
             createSlotAt(CGPoint(x: 100 + (i * 170), y: 230))
         }
         
         for i in 0 ..< 4 {
+            createSlotAt(CGPoint(x: 180 + (i * 170), y: 320))
             createSlotAt(CGPoint(x: 180 + (i * 170), y: 140))
         }
         
@@ -82,7 +76,7 @@ class GameScene: SKScene {
                     if whackSlot.isHit {
                         continue
                     }
-                    
+
                     whackSlot.hit()
                     score -= 5
                     runAction(SKAction.playSoundFileNamed("whackBad.caf", waitForCompletion: false))
@@ -96,6 +90,11 @@ class GameScene: SKScene {
                         continue
                     }
                     
+                    if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
+                        fireParticles.position = whackSlot.position
+                        addChild(fireParticles)
+                    }
+
                     whackSlot.charNode.xScale = 0.85
                     whackSlot.charNode.yScale = 0.85
                     
