@@ -15,6 +15,7 @@
 		277E9FB31C01E96F00B5C2D4 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277E9FB21C01E96F00B5C2D4 /* ActionViewController.swift */; };
 		277E9FB61C01E96F00B5C2D4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277E9FB41C01E96F00B5C2D4 /* MainInterface.storyboard */; };
 		277E9FBA1C01E96F00B5C2D4 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 277E9FB01C01E96F00B5C2D4 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		277E9FC01C01F23200B5C2D4 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 277E9FBF1C01F23200B5C2D4 /* Action.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		277E9FB21C01E96F00B5C2D4 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		277E9FB51C01E96F00B5C2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		277E9FB71C01E96F00B5C2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277E9FBF1C01F23200B5C2D4 /* Action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,8 @@
 		277E9F8E1C01E43800B5C2D4 = {
 			isa = PBXGroup;
 			children = (
-				277E9F991C01E43800B5C2D4 /* Project16 */,
 				277E9FB11C01E96F00B5C2D4 /* Extension */,
+				277E9F991C01E43800B5C2D4 /* Project16 */,
 				277E9F981C01E43800B5C2D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +112,7 @@
 				277E9FB21C01E96F00B5C2D4 /* ActionViewController.swift */,
 				277E9FB41C01E96F00B5C2D4 /* MainInterface.storyboard */,
 				277E9FB71C01E96F00B5C2D4 /* Info.plist */,
+				277E9FBF1C01F23200B5C2D4 /* Action.js */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277E9FC01C01F23200B5C2D4 /* Action.js in Resources */,
 				277E9FB61C01E96F00B5C2D4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
